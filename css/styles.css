@@ -8,10 +8,16 @@ body{
 
 
     .ppl-1 {
-        fill: #fff;
+        fill: #b71212ba;
         stroke-width: 0px;
         z-index: 1;
-        transform: translateX(50px) translateY(5px);
+        /* transform: translateX(50px) translateY(5px); */
+      }
+
+      #person {
+        position: fixed;
+        z-index: 99;
+        width: 100%;
       }
 
     .cls-1 {
