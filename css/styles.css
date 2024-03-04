@@ -8,7 +8,7 @@ body{
 
 
     .ppl-1 {
-        fill: #b71212ba;
+        fill: #ff0000;
         stroke-width: 0px;
         z-index: 1;
         /* transform: translateX(50px) translateY(5px); */
@@ -18,6 +18,7 @@ body{
         position: fixed;
         z-index: 99;
         width: 100%;
+        mix-blend-mode: exclusion;
       }
 
     .cls-1 {
@@ -39,7 +40,7 @@ body{
       }
 
       .cls-5 {
-        fill: #ffffff;
+        fill: #ff0000;
         stroke-width: 0px;
       }
 
@@ -47,6 +48,63 @@ body{
         stroke-width: 2px;
       }
 
-      limbo{
-        size: 50px;
+      /* descent Layer */
+      #descentLayer {
+        height: 100vh;
+        width: 100%;
+      }
+
+      /* limbo Layer */
+      #limboLayer {
+        height: 100vh;
+        width: 100%;
+      }
+
+
+      /* lust Layer */
+      #lustfulLayer {
+        height: 100vh;
+        width: 100%;
+      }
+
+      /* glutton layer */
+      #gluttonLayer {
+        height: 100vh;
+        width: 100%;
+      }
+
+      /* greed Layer*/
+      #greedLayer {
+        height: 100vh;
+        width: 100%;
+      }
+
+      /* wrathful Layer */
+      #wrathfulLayer {
+        height: 100vh;
+        width: 100%;
+      }
+
+      /* heretic Layer */
+      #hereticLayer {
+        height: 100vh;
+        width: 100%;
+      }
+
+      /* violent Layer */
+      #violentLayer {
+        height: 100vh;
+        width: 100%;
+      }
+
+      /* fraudulent Layer */
+      #fraudLayer {
+        height: 100vh;
+        width: 100%;
+      }
+
+      /* satan Layer */
+      #satanLayer {
+        height: 100vh;
+        width: 100%;
       }
