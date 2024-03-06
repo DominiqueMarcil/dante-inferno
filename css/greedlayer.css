@@ -1,0 +1,31 @@
+#greedLayer {
+    height: 100vh;
+    width: 100%;
+  }
+
+.grd-1 {
+    stroke-width: 4px;
+  }
+
+  .grd-1, .grd-2, .grd-3, .grd-4 {
+    fill: none;
+    stroke: #ff0000;
+    stroke-miterlimit: 10;
+  }
+
+  .grd-2 {
+    stroke-width: 3px;
+  }
+
+  .grd-3 {
+    stroke-width: .5px;
+  }
+
+  .grd-5 {
+    fill: #ff0000;
+    stroke-width: 0px;
+  }
+
+  .grd-4 {
+    stroke-width: 2px;
+  }

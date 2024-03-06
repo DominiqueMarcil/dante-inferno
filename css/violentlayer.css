@@ -1,0 +1,33 @@
+   /* violent Layer */
+   #violentLayer {
+    height: 100vh;
+    width: 100%;
+  }
+
+  
+  .vil-1 {
+    stroke-width: 4px;
+  }
+
+  .vil-1, .vil-2, .vil-3, .vil-4 {
+    fill: none;
+    stroke: #ff0000;
+    stroke-miterlimit: 10;
+  }
+
+  .vil-2 {
+    stroke-width: 3px;
+  }
+
+  .vil-3 {
+    stroke-width: .5px;
+  }
+
+  .vil-5 {
+    fill: #ff0000;
+    stroke-width: 0px;
+  }
+
+  .vil-4 {
+    stroke-width: 2px;
+  }

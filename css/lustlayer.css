@@ -1,0 +1,32 @@
+ /* lust Layer */
+ #lustfulLayer {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .lst-1 {
+    stroke-width: 4px;
+  }
+
+  .lst-1, .lst-2, .lst-3, .lst-4 {
+    fill: none;
+    stroke: #ff0000;
+    stroke-miterlimit: 10;
+  }
+
+  .lst-2 {
+    stroke-width: 3px;
+  }
+
+  .lst-3 {
+    stroke-width: .5px;
+  }
+
+  .lst-5 {
+    fill: #ff0000;
+    stroke-width: 0px;
+  }
+
+  .lst-4 {
+    stroke-width: 2px;
+  }

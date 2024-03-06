@@ -1,0 +1,33 @@
+
+      /* fraudulent Layer */
+      #fraudLayer {
+        height: 100vh;
+        width: 100%;
+      }
+
+      .frd-1 {
+        stroke-width: 4px;
+      }
+
+      .frd-1, .frd-2, .frd-3, .frd-4 {
+        fill: none;
+        stroke: #ff0000;
+        stroke-miterlimit: 10;
+      }
+
+      .frd-2 {
+        stroke-width: 3px;
+      }
+
+      .frd-3 {
+        stroke-width: .5px;
+      }
+
+      .frd-5 {
+        fill: #ff0000;
+        stroke-width: 0px;
+      }
+
+      .frd-4 {
+        stroke-width: 2px;
+      }

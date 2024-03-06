@@ -1,0 +1,49 @@
+   /* limbo Layer */
+   #limboLayer {
+    height: 100vh;
+    width: 100%;
+  }
+  .lmb-1 {
+    stroke-width: 4px;
+  }
+
+  .lmb-1, .lmb-2, .lmb-3, .lmb-4 {
+    fill: none;
+    stroke: #ff0000;
+    stroke-miterlimit: 10;
+  }
+
+  .lmb-2 {
+    stroke-width: 3px;
+  }
+
+  .lmb-3 {
+    stroke-width: .5px;
+  }
+
+  .lmb-5 {
+    fill: #ff0000;
+    stroke-width: 0px;
+  }
+
+  .lmb-4 {
+    stroke-width: 2px;
+  }
+  
+  .fire {
+    fill: none;
+    stroke: #ff0000;
+    stroke-width: 4px;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+  }
+
+  .draw {
+    animation: draw 4s forwards;
+  }
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }

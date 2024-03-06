@@ -1,0 +1,32 @@
+    /* heretic Layer */
+    #hereticLayer {
+        height: 100vh;
+        width: 100%;
+      }
+
+      .hrtc-1 {
+        stroke-width: 4px;
+      }
+
+      .hrtc-1, .hrtc-2, .hrtc-3, .hrtc-4 {
+        fill: none;
+        stroke: #ff0000;
+        stroke-miterlimit: 10;
+      }
+
+      .hrtc-2 {
+        stroke-width: 3px;
+      }
+
+      .hrtc-3 {
+        stroke-width: .5px;
+      }
+
+      .hrtc-5 {
+        fill: #ff0000;
+        stroke-width: 0px;
+      }
+
+      .hrtc-4 {
+        stroke-width: 2px;
+      }

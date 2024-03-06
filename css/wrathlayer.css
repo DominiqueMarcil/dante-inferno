@@ -1,0 +1,32 @@
+    /* wrathful Layer */
+    #wrathfulLayer {
+        height: 100vh;
+        width: 100%;
+      }
+
+      .wrth-1 {
+        stroke-width: 4px;
+      }
+
+      .wrth-1, .wrth-2, .wrth-3, .wrth-4 {
+        fill: none;
+        stroke: #ff0000;
+        stroke-miterlimit: 10;
+      }
+
+      .wrth-2 {
+        stroke-width: 3px;
+      }
+
+      .wrth-3 {
+        stroke-width: .5px;
+      }
+
+      .wrth-5 {
+        fill: #ff0000;
+        stroke-width: 0px;
+      }
+
+      .wrth-4 {
+        stroke-width: 2px;
+      }

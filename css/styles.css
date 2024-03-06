@@ -1,3 +1,13 @@
+@import 'limbolayer.css';
+@import 'lustlayer.css';
+@import 'gluttonlayer.css';
+@import 'greedlayer.css';
+@import 'wrathlayer.css';
+@import 'hereticlayer.css';
+@import 'violentlayer.css';
+@import 'fraudlayer.css';
+@import 'satanlayer.css';
+
 body{
     background-color: #000000;
     font-family: Arial, sans-serif;
@@ -13,40 +23,34 @@ body{
         z-index: 1;
         /* transform: translateX(50px) translateY(5px); */
       }
-
       #person {
         position: fixed;
+        top: 50%;
+        /* left: %; */
+        transform: translateY(-50%);
         z-index: 99;
         width: 100%;
+        height: 100%;
         mix-blend-mode: exclusion;
-      }
+        transform-origin: center;
+    }
+    
+    @keyframes sway {
+        0% {
+            transform: rotate(1080deg) translateY(-50%);
+        }
+        50% {
+            transform: rotate(1085deg) translateY(-49%);
+        }
+        100% {
+            transform: rotate(1080deg) translateY(-50%);
+        }
+    }
+    
+    .sway {
+        animation: sway 2s ease-in-out infinite alternate;
+    }
 
-    .cls-1 {
-        stroke-width: 4px;
-      }
-
-      .cls-1, .cls-2, .cls-3, .cls-4 {
-        fill: none;
-        stroke: #ff0000;
-        stroke-miterlimit: 10;
-      }
-
-      .cls-2 {
-        stroke-width: 3px;
-      }
-
-      .cls-3 {
-        stroke-width: .5px;
-      }
-
-      .cls-5 {
-        fill: #ff0000;
-        stroke-width: 0px;
-      }
-
-      .cls-4 {
-        stroke-width: 2px;
-      }
 
       /* descent Layer */
       #descentLayer {
@@ -54,102 +58,63 @@ body{
         width: 100%;
       }
 
-      /* limbo Layer */
-      #limboLayer {
-        height: 100vh;
-        width: 100%;
-      }
-      .lmb-1 {
-        stroke-width: 4px;
-      }
 
-      .lmb-1, .lmb-2, .lmb-3, .lmb-4 {
-        fill: none;
-        stroke: #ff0000;
-        stroke-miterlimit: 10;
-      }
+  h1 {
+    font-size: 3em;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 5%;
+    padding-top: 1em;
+    position: sticky;
+  }
 
-      .lmb-2 {
-        stroke-width: 3px;
-      }
+  
+  span.elevatorL, span.elevatorR {
+  display: inline-block;
+}
 
-      .lmb-3 {
-        stroke-width: .5px;
-      }
+span.elevatorL {
+  animation: moveLeft 0.7s forwards;
+  animation-play-state: paused;
+}
 
-      .lmb-5 {
-        fill: #ff0000;
-        stroke-width: 0px;
-      }
+span.elevatorR {
+  animation: moveRight 0.7s forwards;
+  animation-play-state: paused;
+}
 
-      .lmb-4 {
-        stroke-width: 2px;
-      }
-      
-      .fire {
-        fill: none;
-        stroke: #ff0000;
-        stroke-width: 4px;
-        stroke-miterlimit: 10;
-        stroke-dasharray: 1000;
-        stroke-dashoffset: 1000;
-      }
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-30em);
+  }
+}
 
-      .draw {
-        animation: draw 4s forwards;
-      }
-      @keyframes draw {
-        to {
-          stroke-dashoffset: 0;
-        }
-      }
+@keyframes moveRight {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(30em);
+  }
+}
 
-      
+@keyframes backLeft {
+  0% {
+    transform: translateX(-30em);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 
-      /* lust Layer */
-      #lustfulLayer {
-        height: 100vh;
-        width: 100%;
-      }
-
-      /* glutton layer */
-      #gluttonLayer {
-        height: 100vh;
-        width: 100%;
-      }
-
-      /* greed Layer*/
-      #greedLayer {
-        height: 100vh;
-        width: 100%;
-      }
-
-      /* wrathful Layer */
-      #wrathfulLayer {
-        height: 100vh;
-        width: 100%;
-      }
-
-      /* heretic Layer */
-      #hereticLayer {
-        height: 100vh;
-        width: 100%;
-      }
-
-      /* violent Layer */
-      #violentLayer {
-        height: 100vh;
-        width: 100%;
-      }
-
-      /* fraudulent Layer */
-      #fraudLayer {
-        height: 100vh;
-        width: 100%;
-      }
-
-      /* satan Layer */
-      #satanLayer {
-        height: 100vh;
-        width: 100%;
-      }
+@keyframes backRight {
+  0% {
+    transform: translateX(30em);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}

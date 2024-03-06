@@ -1,0 +1,32 @@
+ /* glutton layer */
+ #gluttonLayer {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .glt-1 {
+    stroke-width: 4px;
+  }
+
+  .glt-1, .glt-2, .glt-3, .glt-4 {
+    fill: none;
+    stroke: #ff0000;
+    stroke-miterlimit: 10;
+  }
+
+  .glt-2 {
+    stroke-width: 3px;
+  }
+
+  .glt-3 {
+    stroke-width: .5px;
+  }
+
+  .glt-5 {
+    fill: #ff0000;
+    stroke-width: 0px;
+  }
+
+  .glt-4 {
+    stroke-width: 2px;
+  }
