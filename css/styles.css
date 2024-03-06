@@ -1,5 +1,5 @@
 @import 'limbolayer.css';
-@import 'lustlayer.css';
+@import 'lustfullayer.css';
 @import 'gluttonlayer.css';
 @import 'greedlayer.css';
 @import 'wrathlayer.css';
@@ -58,12 +58,66 @@ body{
         width: 100%;
       }
 
+      #hugeText {
+        font-size: 4em; /* Adjust the font size as needed */
+        opacity: 0; /* Initially hide the text */
+        animation: fadeIn 1s ease forwards; /* Animation to fade in */
+      }
+      
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      
+      @keyframes fadeOut {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      h2 {
+        font-size: 2.5em;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 1%;
+        padding-top: 1em;
+        position: sticky;
+      }
+
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.986); /* Semi-transparent black overlay */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999; /* Ensure the overlay is on top of everything else */
+        opacity: 1; /* Initially fully opaque */
+        transition: opacity 1s ease; /* Fade transition */
+      }
+      #hugeText {
+        font-size: 10rem; /* Adjust font size as needed */
+      }
+      
+      .fade-out {
+        opacity: 0; /* Fade out the overlay */
+      }
 
   h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     color: #ffffff;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 1%;
     padding-top: 1em;
     position: sticky;
   }
@@ -74,12 +128,12 @@ body{
 }
 
 span.elevatorL {
-  animation: moveLeft 0.7s forwards;
+  animation: moveLeft 0.9s forwards;
   animation-play-state: paused;
 }
 
 span.elevatorR {
-  animation: moveRight 0.7s forwards;
+  animation: moveRight 0.9s forwards;
   animation-play-state: paused;
 }
 
@@ -88,7 +142,7 @@ span.elevatorR {
     transform: translateX(0px);
   }
   100% {
-    transform: translateX(-30em);
+    transform: translateX(-35em);
   }
 }
 
@@ -97,7 +151,7 @@ span.elevatorR {
     transform: translateX(0px);
   }
   100% {
-    transform: translateX(30em);
+    transform: translateX(40em);
   }
 }
 
@@ -118,3 +172,4 @@ span.elevatorR {
     transform: translateX(0px);
   }
 }
+

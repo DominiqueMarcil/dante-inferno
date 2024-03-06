@@ -9,6 +9,18 @@ window.addEventListener('scroll', function() {
       person.classList.remove('sway');
   }
 });
+
+// Beginning Layer
+// document.addEventListener('DOMContentLoaded', function() {
+//   let overlay = document.getElementById('overlay');
+
+//   // After 10 seconds, fade out the overlay
+//   setTimeout(function() {
+//     overlay.classList.add('fade-out');
+//   }, 10000); // 10000 milliseconds = 10 seconds
+// });
+
+
 // elevator layer
 window.addEventListener('scroll', function() {
   let scrollTop = window.scrollY;
@@ -65,7 +77,7 @@ window.addEventListener('scroll', function() {
     const scaleFactor = 1 + (currentScrollTop / (document.body.clientHeight - window.innerHeight));
 
     // Apply the scale transformation with a transition effect
-    limboLayer.style.transition = 'transform 0.1s ease-in-out';
+    limboLayer.style.transition = 'transform 0.2s ease-in-out';
     limboLayer.style.transform = `scale(${scaleFactor})`;
 
     // Update the last scroll position
@@ -74,3 +86,39 @@ window.addEventListener('scroll', function() {
 
 
 // lustful layer animations
+document.addEventListener('DOMContentLoaded', function() {
+  const character = document.getElementById('character');
+
+  let scaleFactor = 1;
+  let isIncreasing = true;
+
+  function pulseAnimation() {
+      // Adjust the scale factor based on the animation direction
+      if (isIncreasing) {
+          scaleFactor += 0.002; // Adjust increment for a subtle effect
+          if (scaleFactor >= 1.01) {
+              isIncreasing = false;
+          }
+      } else {
+          scaleFactor -= 0.002; // Adjust increment for a subtle effect
+          if (scaleFactor <= 1) {
+              isIncreasing = true;
+          }
+      }
+
+      // Apply the scale transformation with a transition effect
+      character.style.transition = 'transform 1.5s ease-in-out'; // Adjust duration for a slower animation
+      character.style.transform = `scale(${scaleFactor})`;
+
+      // Call the pulseAnimation function recursively
+      requestAnimationFrame(pulseAnimation);
+  }
+
+  // Start the pulse animation
+  pulseAnimation();
+});
+
+
+
+
+
