@@ -19,14 +19,28 @@
   }
 
   .glt-3 {
-    stroke-width: .5px;
+    stroke-width: 1px;
   }
 
   .glt-5 {
     fill: #ff0000;
-    stroke-width: 0px;
+    stroke-width: 10px;
   }
 
   .glt-4 {
     stroke-width: 2px;
   }
+
+  #openmouth {
+    fill: #ff0000;
+    stroke-width: 0px;
+    z-index: 1;
+  }
+ .glt-5 {
+  transition: transform 9s ease, opacity 6s ease;
+  }
+
+  
+  .glt-5.active {
+  opacity: 5;
+}

@@ -17,7 +17,7 @@ window.addEventListener('scroll', function() {
 //   // After 10 seconds, fade out the overlay
 //   setTimeout(function() {
 //     overlay.classList.add('fade-out');
-//   }, 10000); // 10000 milliseconds = 10 seconds
+//   }, 7000); // 10000 milliseconds = 10 seconds
 // });
 
 
@@ -94,20 +94,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function pulseAnimation() {
       // Adjust the scale factor based on the animation direction
-      if (isIncreasing) {
-          scaleFactor += 0.002; // Adjust increment for a subtle effect
-          if (scaleFactor >= 1.01) {
-              isIncreasing = false;
-          }
-      } else {
-          scaleFactor -= 0.002; // Adjust increment for a subtle effect
-          if (scaleFactor <= 1) {
-              isIncreasing = true;
-          }
+      scaleFactor = isIncreasing ? scaleFactor + 0.0001 : scaleFactor - 0.0001;
+
+      // Toggle the animation direction when scale reaches certain limits
+      if (scaleFactor >= 1.01 || scaleFactor <= 1.0) {
+          isIncreasing = !isIncreasing;
       }
 
-      // Apply the scale transformation with a transition effect
-      character.style.transition = 'transform 1.5s ease-in-out'; // Adjust duration for a slower animation
+      // Apply the scale transformation
       character.style.transform = `scale(${scaleFactor})`;
 
       // Call the pulseAnimation function recursively
@@ -117,6 +111,28 @@ document.addEventListener('DOMContentLoaded', function() {
   // Start the pulse animation
   pulseAnimation();
 });
+
+
+// gluttony layer animations
+document.addEventListener("DOMContentLoaded", function() {
+  const glt5 = document.querySelector("#openmouth .glt-5");
+
+  function fadeInOnScroll() {
+    const scrollPosition = window.scrollY;
+    const elementPosition = glt5.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (elementPosition < windowHeight / 1) {
+      glt5.style.opacity = 1;
+    } else {
+      glt5.style.opacity = 0;
+    }
+  }
+
+  window.addEventListener("scroll", fadeInOnScroll);
+});
+
+
 
 
 

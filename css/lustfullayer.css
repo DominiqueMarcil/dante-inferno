@@ -33,17 +33,16 @@
   
   @keyframes colorChange {
     0% {
-        fill: #8a0000; /* Start color (white) */
+        fill: #520000; /* Start color (white) */
     }
     50% {
         fill: #ff0000; /* Middle color (red) */
     }
     100% {
-        fill: #8a0000; /* End color (white) */
+        fill: #520000; /* End color (white) */
     }
 }
 
 #character path.lst-5 {
-    fill: #ffffff; /* Initial color (white) */
-    animation: colorChange 2s infinite; /* Apply the color change animation */
+    animation: colorChange 3s infinite; /* Apply the color change animation */
 }

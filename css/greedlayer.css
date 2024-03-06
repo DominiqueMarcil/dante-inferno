@@ -29,3 +29,22 @@
   .grd-4 {
     stroke-width: 2px;
   }
+
+  #skeletonHand path.grd-5{
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    background-color: gray; /* Adjust color as needed */
+    animation: handMovement 2s ease-in-out infinite alternate; /* Adjust animation properties as needed */
+}
+
+@keyframes handMovement {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-7px); /* Adjust upward movement distance as needed */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
