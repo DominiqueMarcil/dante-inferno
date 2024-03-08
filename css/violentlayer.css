@@ -31,3 +31,45 @@
   .vil-4 {
     stroke-width: 2px;
   }
+
+  .vil-spear {
+    fill: #ff0000;
+    stroke-width: 0px;
+    animation: backAndForth 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes backAndForth {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px); /* Adjust the distance as needed */
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .vil-ppl {
+    fill: #ff0000;
+    stroke-width: 0px;
+    animation: backAndForth 2s ease-in-out infinite alternate;
+  }
+
+  .vil-fly {
+    fill: #ff0000;
+    stroke-width: 0px;
+    animation: fly 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes fly{
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px); /* Adjust the distance as needed */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }

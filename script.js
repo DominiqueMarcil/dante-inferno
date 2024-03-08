@@ -81,7 +81,7 @@ window.addEventListener('scroll', function() {
     limboLayer.style.transform = `scale(${scaleFactor})`;
 
     // Update the last scroll position
-    lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
+    lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; 
 });
 
 
@@ -131,9 +131,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
   window.addEventListener("scroll", fadeInOnScroll);
 });
-
-
-
 
 
 
