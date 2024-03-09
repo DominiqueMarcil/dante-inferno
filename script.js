@@ -4,7 +4,7 @@
     const audio = document.getElementById('myAudio');
 
     // Unmute the audio (so it's not muted for users)
-    audio.muted = false;
+    audio.muted = true;
 
     // Play the audio
     audio.play();
