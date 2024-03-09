@@ -10,6 +10,9 @@
 @import 'descentlayer.css';
 @import 'finalascendlayer.css';
 @import 'person.css';
+@import 'iconfonts.css';
+@import 'button.css';
+
 body{
     background-color: #000000;
     font-family: Arial, sans-serif;
@@ -67,9 +70,8 @@ body{
   h1 {
     font-size: 2.5rem;
     color: #ffffff;
-    text-align: center;
-    margin-top: 1%;
-    padding-top: 1em;
+    text-align: center;;
+    padding-top: 1px
     /* position: sticky; */
   }
 
@@ -130,4 +132,6 @@ span.elevatorR {
     transform: translateX(0px);
   }
 }
+
+
 

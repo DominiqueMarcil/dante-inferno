@@ -1,14 +1,38 @@
-   // JavaScript code to start playing the audio when the page loads
-   window.addEventListener('DOMContentLoaded', (event) => {
-    // Get the audio element
-    const audio = document.getElementById('myAudio');
+// // Get the audio element
+// var audio = document.getElementById('Audio');
 
-    // Unmute the audio (so it's not muted for users)
-    audio.muted = true;
+// // Get the buttons
+// var playButton = document.getElementById('play');
+// var muteButton = document.getElementById('mute');
 
-    // Play the audio
-    audio.play();
-});
+// // Add event listener to the play button
+// playButton.addEventListener('click', function() {
+//     // Check if the audio is paused
+//     if (audio.paused) {
+//         // If it is, play the audio
+//         audio.play();
+//     } else {
+//         // If it's not, pause the audio
+//         audio.pause();
+//     }
+// });
+
+// // Add event listener to the mute button
+// muteButton.addEventListener('click', function() {
+//     // Check if the audio is muted
+//     if (audio.muted) {
+//         // If it is, unmute the audio
+//         audio.muted = false;
+//     } else {
+//         // If it's not, mute the audio
+//         audio.muted = true;
+//     }
+// });
+
+// myAudio.addEventListener("ended", function() {
+//   playButton.innerHTML = "Play";
+//   isPlaying = false;
+// });
 
 // person Layer
 window.addEventListener('scroll', function() {
