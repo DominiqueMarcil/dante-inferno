@@ -14,6 +14,7 @@ body{
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 
@@ -83,14 +84,6 @@ body{
         }
       }
 
-      h2 {
-        font-size: 2.5em;
-        color: #ffffff;
-        text-align: center;
-        margin-top: 1%;
-        padding-top: 1em;
-        position: sticky;
-      }
 
       .overlay {
         position: fixed;
@@ -107,7 +100,7 @@ body{
         transition: opacity 1s ease; /* Fade transition */
       }
       #hugeText {
-        font-size: 10rem; /* Adjust font size as needed */
+        font-size: 5rem; /* Adjust font size as needed */
       }
       
       .fade-out {
@@ -115,12 +108,12 @@ body{
       }
 
   h1 {
-    font-size: 2.5em;
+    font-size: 1.5rem;
     color: #ffffff;
     text-align: center;
     margin-top: 1%;
     padding-top: 1em;
-    position: sticky;
+    /* position: sticky; */
   }
 
   

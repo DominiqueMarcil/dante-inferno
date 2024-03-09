@@ -11,14 +11,14 @@ window.addEventListener('scroll', function() {
 });
 
 // Beginning Layer
-// document.addEventListener('DOMContentLoaded', function() {
-//   let overlay = document.getElementById('overlay');
+document.addEventListener('DOMContentLoaded', function() {
+  let overlay = document.getElementById('overlay');
 
-//   // After 10 seconds, fade out the overlay
-//   setTimeout(function() {
-//     overlay.classList.add('fade-out');
-//   }, 7000); // 10000 milliseconds = 10 seconds
-// });
+  // After 10 seconds, fade out the overlay
+  setTimeout(function() {
+    overlay.classList.add('fade-out');
+  }, 7000); // 10000 milliseconds = 10 seconds
+});
 
 
 // elevator layer
