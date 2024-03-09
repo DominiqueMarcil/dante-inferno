@@ -61,7 +61,6 @@ body{
       }
 
       #hugeText {
-        font-size: 4em; /* Adjust the font size as needed */
         opacity: 0; /* Initially hide the text */
         animation: fadeIn 1s ease forwards; /* Animation to fade in */
       }
@@ -109,6 +108,15 @@ body{
 
   h1 {
     font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 1%;
+    padding-top: 1em;
+    /* position: sticky; */
+  }
+
+  h2 {
+    font-size: 2rem;
     color: #ffffff;
     text-align: center;
     margin-top: 1%;
