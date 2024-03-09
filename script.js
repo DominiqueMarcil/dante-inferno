@@ -1,3 +1,15 @@
+   // JavaScript code to start playing the audio when the page loads
+   window.addEventListener('DOMContentLoaded', (event) => {
+    // Get the audio element
+    const audio = document.getElementById('myAudio');
+
+    // Unmute the audio (so it's not muted for users)
+    audio.muted = false;
+
+    // Play the audio
+    audio.play();
+});
+
 // person Layer
 window.addEventListener('scroll', function() {
   var person = document.getElementById('person');

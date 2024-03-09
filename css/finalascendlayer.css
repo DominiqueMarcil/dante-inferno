@@ -26,25 +26,26 @@ h3 {
 .circle {
     width: 1500px;
     height: 850px;
-    background-color: #ffffff;
+    background-color: lab(97%, -6, 14);
     border-radius: 50%;
     animation: glow 2s infinite alternate;
-
   }
   
   .glow {
     border-radius: 50%;
-    box-shadow: 0 0 10px #a00000, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff, 0 0 80px #ffffff, 0 0 90px #ffffff;
+    box-shadow: 0 0 10px #a00000, 0 0 20px hsl(50, 100%, 95%), 0 0 30px hsl(50, 100%, 95%), 0 0 40px hsl(50, 100%, 95%), 0 0 50px hsl(50, 100%, 95%), 0 0 60px hsl(50, 100%, 95%), 0 0 70px hsl(50, 100%, 95%), 0 0 80px hsl(50, 100%, 95%), 0 0 90px hsl(50, 100%, 95%);
+    animation: glow 2s infinite alternate;
   }
   
   @keyframes glow {
     0% {
-      box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff, 0 0 80px #ffffff, 0 0 90px #ffffff;
+      box-shadow: 0 0 10px lab(97%, -6, 14), 0 0 20px lab(97%, -6, 14), 0 0 30px lab(97%, -6, 14), 0 0 40px lab(97%, -6, 14), 0 0 50px lab(97%, -6, 14), 0 0 60px lab(97%, -6, 14), 0 0 70px lab(97%, -6, 14), 0 0 80px lab(97%, -6, 14), 0 0 90px lab(97%, -6, 14);
     }
     100% {
-      box-shadow: 0 0 20px #ffffff, 0 0 40px #ffffff, 0 0 60px #ffffff, 0 0 80px #ffffff, 0 0 100px #ffffff, 0 0 120px #ffffff, 0 0 140px #ffffff, 0 0 160px #ffffff, 0 0 180px #ffffff;
+      box-shadow: 0 0 20px lab(97%, -6, 14), 0 0 40px lab(97%, -6, 14), 0 0 60px lab(97%, -6, 14), 0 0 80px lab(97%, -6, 14), 0 0 100px lab(97%, -6, 14), 0 0 120px lab(97%, -6, 14), 0 0 140px lab(97%, -6, 14), 0 0 160px lab(97%, -6, 14), 0 0 180px lab(97%, -6, 14);
     }
   }
+  
 
   .filler {
     width: 100%;

@@ -1,0 +1,33 @@
+.ppl-1 {
+    fill: #ff0000;
+    stroke-width: 0px;
+    z-index: 1;
+    /* transform: translateX(50px) translateY(5px); */
+  }
+  #person {
+    position: fixed;
+    top: 50%;
+    /* left: %; */
+    transform: translateY(-50%);
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: exclusion;
+    transform-origin: center;
+}
+
+@keyframes sway {
+    0% {
+        transform: rotate(1080deg) translateY(-50%);
+    }
+    50% {
+        transform: rotate(1085deg) translateY(-49%);
+    }
+    100% {
+        transform: rotate(1080deg) translateY(-50%);
+    }
+}
+
+.sway {
+    animation: sway 2s ease-in-out infinite alternate;
+}
