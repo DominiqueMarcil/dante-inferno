@@ -31,6 +31,11 @@
         stroke-width: 2px;
       }
 
-   
+      .hrtc-hrtc {
+        fill: #ff0000;
+        stroke-width: 2px;
+        filter: blur(10px);
+        opacity: 0.5;
+      }
 
    

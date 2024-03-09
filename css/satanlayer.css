@@ -31,3 +31,32 @@
   .stn-4 {
     stroke-width: 2px;
   }
+
+  .stn-stn {
+    fill: #ff0000;
+    stroke-width: 0px;
+    filter: brightness(150%);
+
+  }
+
+  .stn-btm {
+        fill: #ff0202;
+        stroke-width: 0px;
+        filter: blur(9px);
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .stn-btm {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards infinite alternate;
+  }
+
+  
