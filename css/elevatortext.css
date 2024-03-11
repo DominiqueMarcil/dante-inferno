@@ -1,0 +1,53 @@
+span.elevatorL, span.elevatorR {
+    display: inline-block;
+  }
+  
+  span.elevatorL {
+    animation: moveLeft 0.9s forwards;
+    animation-play-state: paused;
+  }
+  
+  span.elevatorR {
+    animation: moveRight 0.9s forwards;
+    animation-play-state: paused;
+  }
+  
+  @keyframes moveLeft {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-35em);
+    }
+  }
+  
+  @keyframes moveRight {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(40em);
+    }
+  }
+  
+  @keyframes backLeft {
+    0% {
+      transform: translateX(-30em);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  
+  @keyframes backRight {
+    0% {
+      transform: translateX(30em);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  
+  
+  
+  

@@ -1,42 +1,45 @@
 // // Get the audio element
-// var audio = document.getElementById('Audio');
+var myAudio = document.getElementById('myAudio');
 
-// // Get the buttons
-// var playButton = document.getElementById('play');
-// var muteButton = document.getElementById('mute');
+// Get the buttons
+var playButton = document.getElementById('play');
+var muteButton = document.getElementById('mute');
 
-// // Add event listener to the play button
-// playButton.addEventListener('click', function() {
-//     // Check if the audio is paused
-//     if (audio.paused) {
-//         // If it is, play the audio
-//         audio.play();
-//     } else {
-//         // If it's not, pause the audio
-//         audio.pause();
-//     }
-// });
+// Add event listener to the play button
+playButton.addEventListener('click', function() {
+  console.log('clicked');
+    // Check if the audio is paused
+    if (myAudio.paused) {
+      console.log('paused');
+        // If it is, play the audio
+        myAudio.play();
+    } else {
+      console.log('playing');
+        // If it's not, pause the audio
+        myAudio.pause();
+    }
+});
 
-// // Add event listener to the mute button
-// muteButton.addEventListener('click', function() {
-//     // Check if the audio is muted
-//     if (audio.muted) {
-//         // If it is, unmute the audio
-//         audio.muted = false;
-//     } else {
-//         // If it's not, mute the audio
-//         audio.muted = true;
-//     }
-// });
+// Add event listener to the mute button
+muteButton.addEventListener('click', function() {
+    // Check if the audio is muted
+    if (myAudio.muted) {
+        // If it is, unmute the audio
+        myAudio.muted = false;
+    } else {
+        // If it's not, mute the audio
+        myAudio.muted = true;
+    }
+});
 
-// myAudio.addEventListener("ended", function() {
-//   playButton.innerHTML = "Play";
-//   isPlaying = false;
-// });
+myAudio.addEventListener("ended", function() {
+  playButton.innerHTML = "Play";
+  isPlaying = false;
+});
 
 // person Layer
 window.addEventListener('scroll', function() {
-  var person = document.getElementById('person');
+  var person = document.getElementById('personLayer');
   var scrollPosition = window.scrollY;
 
   if (scrollPosition > 100) {
