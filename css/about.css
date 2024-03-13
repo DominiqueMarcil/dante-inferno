@@ -1,0 +1,13 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* This will create a 2-column grid */
+    gap: 10px; /* This will add a 10px gap between grid items */
+    padding: 10px; /* This will add padding around the entire grid */
+}
+
+.grid-item {
+    padding: 20px; /* This will add padding inside each grid item */
+    border-radius: 5px; /* This will round the corners of each grid item */
+    text-align: center; /* This will center the text inside each grid item */
+}
+

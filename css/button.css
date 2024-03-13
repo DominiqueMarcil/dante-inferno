@@ -2,10 +2,10 @@
     display: flex;
     justify-items: center;
     align-items: center;
-    z-index: 9999; /* Ensure the overlay is on top of everything else */
+    z-index: 99; /* Ensure the overlay is on top of everything else */
     margin-top: 2em;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     /* grid-gap: 5em; */
 
   }
@@ -28,3 +28,7 @@
     background-color: #ff00007b;
     color: #ffffff;
   }
+ 
+  button a {
+    text-decoration: none;
+}
