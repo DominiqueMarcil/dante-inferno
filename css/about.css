@@ -11,3 +11,6 @@
     text-align: center; /* This will center the text inside each grid item */
 }
 
+.text {
+    font-size: 1.5rem; /* This will set the font size to 1.5rem */
+   }
